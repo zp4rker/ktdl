@@ -1,0 +1,5 @@
+name: KTDL
+main: com.zp4rker.ktdl.KTDL
+version: ${project.version}
+author: zp4rker
+description: A kotlin library downloader test.
