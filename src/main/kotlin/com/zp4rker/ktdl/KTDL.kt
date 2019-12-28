@@ -1,5 +1,7 @@
 package com.zp4rker.ktdl
 
+import com.zp4rker.bukkitutils.KotlinRuntime
+import com.zp4rker.bukkitutils.Libraries
 import org.bukkit.plugin.java.JavaPlugin
 
 class KTDL : JavaPlugin() {
@@ -12,7 +14,7 @@ class KTDL : JavaPlugin() {
             logger.info("Successfully found or downloaded Kotlin libraries!")
 
             logger.info("Loading Kotlin runtime...")
-            files.forEach(KotlinRuntime::addLibrary)
+            Libraries.addLibraries(*files)
 
             logger.info("Successfully loaded Kotlin runtime!")
         }
